@@ -1,0 +1,28 @@
++Gets(nombreArray) sirve para declarar un array sin la necesidad de un For ni otra estructura de control.
++fflush(stdin); para que pueda volver a usar get y libere espacio 
++strlen(nombreArray), sirve basicamente para que vos tengas un contador automatico de la cantidad de caracteres
+que tiene el Aray, esto nos ahorra trabajo y lioneas de codigo
++strcmp(nombreArray1, nombreArray2) sirve para hacer una comparativa entre 2 arrays y va sumando numeros int
+si da 0 quiere decir que los caracteres son iguales, si da <0 quiere decir que la suma de caracteres tiene mas
+valor en el primer array, el valor se da segun la tabla ASCII ya que cada caracter tiene un numero, si da >0 el segundo
+valor tiene mas valor en caracter.
++strcpy(array1, array2) se copia los valores del array 2 al array 1
++strcat(array1, array2) agrega la cadena 2 a la cadena 1 ej:
+int main() {
+    char destino[20] = "Hola, ";
+    const char fuente[] = "Mundo!";
+
+    strcat(destino, fuente); // Concatena "Mundo!" al final de "Hola, 
+}
+estructura {
+
+    si quiero agregar una estructura tengo que hacerlo con un void, fuera de la funcion main. Le tengo que asignar un nombre
+    ej: void suma() {}
+    puedo hacer los procesos que yo quiera ahi dentro y luego si quiero que salga en la funcion main tengo que llamar a esa estructura
+    ej: int main () {
+        suma();
+    }
+    
+
+
+}
